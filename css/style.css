@@ -1,9 +1,12 @@
 /*////////////// Fonts //////////////*/
-
+@@font-face {
+	font-family: 'Baskerville';
+	src: url(../fonts/Baskerville.ttc);
+}
 /* link the web font used for the level 1 heading here */
 
 /*////////// Global Styles //////////*/
-
+/*/// LAYOUT ///*/
 body {
 	background: #F3EBE9;
 	font-size: 100%;
@@ -17,6 +20,61 @@ body {
 	padding: 0 45px 20px;
 }
 
-#zetsy_title {
-	
+* {
+	/*-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;*/
+	padding: 0;
+	margin: 0;
+}
+
+/*/// DESCENDENT SELECTOR ///*/
+h1 {
+	font-family: 'Baskerville', serif;
+	font-weight: normal;
+	font-size: 5em;
+	padding-bottom: 10px;
+	margin: 0 0 5px;
+	border-bottom: 1px solid #ccc;
+}
+
+h2 {
+	font-size: 2em;
+	color: rgb(111,127,122);
+}
+
+p {
+	font-size: 1em;
+	margin: 0 0 12px 0;
+	color: #555;
+}
+
+.copyright {
+	font-size: 0.7em;
+}
+
+/*/// PSUEDO SELECTOR ///*/
+header a {
+	color: #98ada6
+}
+
+header a:hover {
+	color: #6f7f7a
+}
+
+footer {
+	text-align: right;
+}
+
+#press_zetsy {
+	margin-bottom: 18px;
+}
+
+#press_zetsy img {
+	padding: 1px;
+	border: 5px #ccc solid;
+}
+
+#press_zetsy img:hover {
+	border: 5px rgb(111,127,122) solid;
 }
